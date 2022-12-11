@@ -81,7 +81,7 @@ body {
 
 <div class="row">
   <div class="leftcolumn">
-    {% for post in posts %}
+    {% for post in posts reversed %}
     <div class="card">
         <h1>{{post.title}}</h1>
         <h5>{{post.created_at}}</h5>
