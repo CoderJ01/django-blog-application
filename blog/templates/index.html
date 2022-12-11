@@ -85,7 +85,7 @@ body {
     <div class="card">
         <h1>{{post.title}}</h1>
         <h5>{{post.created_at}}</h5>
-        <p>{{post.body}}</p>
+        <p>{{post.body|truncatewords:20}}</p>
     </div>
     {% endfor %}
   </div>
