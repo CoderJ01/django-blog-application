@@ -7,5 +7,5 @@ def index(request):
     return render(request, 'index.html', {'posts': posts}) # dynamically retrieve objects from posts
 
 def post(request, pk): # id of the post will be passed to the function
-    posts = Post.objects.get(id=pk), # get id of post
+    posts = Post.objects.get(id=pk) # get id of post
     return render(request, 'posts.html', {'posts': posts}) 
